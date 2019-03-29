@@ -22,7 +22,7 @@
         android:layout_marginTop="38dp"
         android:textSize="18sp"
         android:textColor="@color/colorPrimary"
-        android:text="戳图标开始清除kingroot" />
+        android:text="Poke icon starts to clear kingroot" />
 
     <ImageButton
         android:id="@+id/ib_start"
@@ -41,6 +41,6 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:paddingBottom="50dp"
-        android:text="关于"
+        android:text="about"
         android:textColor="@color/colorPrimary" />
 </RelativeLayout>
