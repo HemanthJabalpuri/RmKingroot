@@ -1,23 +1,23 @@
-关于
+On
 ===
-* 强力卸载kingroot，保留root权限。如无法正确卸载，欢迎反馈问题
+* Power off the kingroot and keep root privileges. If you can't uninstall properly, welcome feedback
 
-更新日志
+Changelog
 ===
 v1.0
-*  添加异步调用shell脚本
-*  添加执行中dialog，防止多次点击
-*  添加跳转到应用商店或官网下载SuperSu
-*  添加README
+*  Add an asynchronous call shell script
+*  Add an execution dialog to prevent multiple clicks
+*  Add to jump to the app store or official website to download SuperSu
+*  Add README
 
-APK下载
+APK Download
 ===
 
 * [Release](https://github.com/inx95/RmKingroot/releases)
 
-* 百度云：链接: https://pan.baidu.com/s/1cgU8wA 密码: ha8s
+* Baidu Cloud: Link: https://pan.baidu.com/s/1cgU8wA Password: ha8s
 
-脚本来源
+Script
 ===
 http://www.w0lfdroid.com/2015/05/How-to-Remove-Replace-KingUser-KingRoot-with-SuperSU.html  
 
