@@ -30,9 +30,9 @@ public class MainActivity extends AppCompatActivity {
     private static final String mTargetDir = Environment.getExternalStorageDirectory().getPath() + File.separator + "mrw";
     private static final String SU = "su";
     private static final String BUSYBOX = "busybox";
-    private static final String HINT_WORKING = "正在进行清理 KingRoot 作业。。。\n请耐心等待!";
-    private static final String HINT_SUCCESS = "成功，跳转到应用商店安装 SuperSu ！";
-    private static final String HINT_FAILED = "失败，真是可怕。。。\n请退出检查是否授予Root权限！";
+    private static final String HINT_WORKING = "ongoing clean-up KingRoot job ... \n please be patient!";
+    private static final String HINT_SUCCESS = "Success, jump to the app store to install SuperSu!";
+    private static final String HINT_FAILED = "Failed, it's terrible... \nPlease exit to check if root permissions are granted!";
     private static final String LINK = "https://github.com/inX95/RmKingroot";
 
     private Handler mHandler = new Handler();
@@ -101,27 +101,27 @@ public class MainActivity extends AppCompatActivity {
 
     private void initWorkingDialog() {
         mWorkingDialog = new AlertDialog.Builder(MainActivity.this)
-                .setTitle("清理")
+                .setTitle("cleanup")
                 .setMessage(HINT_WORKING)
                 .setCancelable(false)
                 .create();
     }
 
     private void alertInstallSuperSu() {
-        // 提示好评
+        // Tips praise
         Dialog dialog = new AlertDialog.Builder(this)
-                .setTitle("成功")
-                .setMessage("是否安装SuperSu？")
-                .setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                .setTitle("success")
+                .setMessage("Do you want to install SuperSu?")
+                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         openApplicationMarket("eu.chainfire.supersu");
                     }
                 })
-                .setNegativeButton("取消", new DialogInterface.OnClickListener() {
+                .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        Toast.makeText(getApplicationContext(), "关闭", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "close", Toast.LENGTH_SHORT).show();
                     }
                 })
                 .create();
@@ -137,7 +137,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(localIntent);
         } catch (Exception e) {
             e.printStackTrace();
-            Toast.makeText(MainActivity.this, "打开应用商店失败", Toast.LENGTH_SHORT).show();
+            Toast.makeText(MainActivity.this, "Open app store failed", Toast.LENGTH_SHORT).show();
             openLinkBySystem("http://www.supersu.com/download");
         }
     }
